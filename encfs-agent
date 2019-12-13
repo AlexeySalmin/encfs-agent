@@ -20,14 +20,14 @@ Thank you, pts!
 ## download encfs-agent file and adjust VAULTS_DIR and MNT_DIR variables in it if you don't like the defaults
 ## defaults are:
 ##    vaults stored in ~/.vaults
-##    vaults mounted under /mnt/vaults
+##    vaults mounted under ~/vaults-mnt
 
 ## Ready! You can test it...
 
 ## set following variables appropriately (use the same values as in the previous step)
 EA=~/bin/encfs-agent
 VAULTS_DIR=~/.vaults
-MNT_DIR=/mnt/vaults
+MNT_DIR=~/vaults-mnt
 
 chmod +x "$EA"
 mkdir -p "$MNT_DIR"
@@ -49,8 +49,8 @@ umount $MNT_DIR/first
 
 ## and again...
 $EA passwd first | encfs --extpass='cat' "$VAULTS_DIR/first" "$MNT_DIR/first"
-cat /mnt/vaults/first/test
-umount /mnt/vaults/first
+cat ~/vaults-mnt/first/test
+umount ~/vaults-mnt/first
 
 ------------------ NOTE
 
