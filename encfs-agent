@@ -223,7 +223,7 @@ def main():
      mnt_dest=os.path.join(MNT_DIR,vault)
      ## we could pass password by "-extpass=cat", but that will break interaction
      ## with encfs (at first mount, when creating encrypted fs)
-     cmd=["encfs", "--extpass='%s' passwd '%s'"%(sys.argv[0],vault),mnt_src,mnt_dest]
+     cmd=["encfs", "--extpass='%s' passwd '%s' '%s'"%(sys.argv[0],vault,key_comment),mnt_src,mnt_dest]
      #print '"'+('" "'.join(cmd))+'"'
      subprocess.call(cmd)
   else:
