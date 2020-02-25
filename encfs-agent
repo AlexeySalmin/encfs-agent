@@ -11,6 +11,32 @@ You can use ssh-askpass for ssh-agent if you want.
 Adapted from code from http://ptspts.blogspot.cz/2010/06/how-to-use-ssh-agent-programmatically.html
 Thank you, pts!
 
+------------------ DISCLAIMER
+
+Please note I am not an cryptography expert at all. It's up to you to decide if the algorithm used
+is suitable for your needs.
+
+See e.g. https://crypto.stackexchange.com/questions/19631/is-it-safe-to-derive-a-password-from-a-signature-provided-by-ssh-agent
+
+------------------ LICENSE
+
+Copyright 2020 Miroslav Prymek
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and
+associated documentation files (the "Software"), to deal in the Software without restriction,
+including without limitation the rights to use, copy, modify, merge, publish, distribute,
+sublicense, and/or sell copies of the Software, and to permit persons to whom the Software
+is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or
+substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING
+BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,
+DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
 ------------------ REQUIREMENTS
   - python 2.x
   - correctly configured ssh-agent (test with "ssh-add -L")
